@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstyle.css">
+    <title>regform</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="img/boss.jpg" alt="img">
+            </div>
+
+            <form>
+                 <h3>Registration Form</h3>
+
+                <div class="form-group">
+                    <input type="text"placeholder="First Name" class="form-control">
+                    <input type="text"placeholder="Last Name" class="form-control">
+                </div>
+
+                <div class="form-wr">
+                    <input type="text"placeholder="Username" class="form-control">
+                </div>
+
+                <div class="form-wr">
+                    <input type="text"placeholder="Email Address" class="form-control">
+                </div>
+
+                <div class="form-wr">
+                    <select name="" id="" class="form-control">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select> 
+                </div>
+
+                <div class="form-wr">
+                    <input type="password" placeholder="password" class="form-control">
+                </div>
+
+                <div class="form-wr">
+                    <input type="password" placeholder="Confirm password" class="form-control">
+                </div>
+                <hr>
+
+                <label><strong>Account Type(required)</strong></label><br />
+                <input type="radio" name="accounttype" value="personal" id="personal" />
+                <label for="personal">Personal</label><br />
+                <input type="radio" name="accounttype" value="business" id="business" />
+                <label for="business">Business</label>
+
+                <p>Upload a profile picture:</p>
+                <input type="file" id="myFile" name="filename">
+
+                <p>Input your age(years):</p>
+                <input type="text" name="age">
+                <br/>
+
+                <p>How did you hear about us?<p>
+                    <select name="select"id="select">
+                        <option value="select">(select one)</option>
+                        <option value="food">"Delicious Foods"</option>
+                        <option value="blank">"Great vibes."</option>
+                        <option value="blank">"Relaxing atmosphere."</option>
+                        <option value="blank">"Perfect for a date night."</option>
+                        <option value="blank">"Feels like home."</option>
+                    </select><br/>
+
+                <p>Your Bio</p>
+                <textarea for="yourbio" placeholder="Chikz magnet"></textarea><br />
+                
+
+                <input type="checkbox" id="termsAndConditions" required>
+                <label for="termsAndConditions">I accept the <a href="blank">term and conditions</a></label><br/>
+
+
+                <button>Register Now</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
