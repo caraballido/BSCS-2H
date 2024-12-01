@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background:linear-gradient(90deg, #a7da6e 50%, #24cc40 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-body{
+    background-color: rgb(167, 241, 173);
+    width: 90%;
+    height: 90vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 2);;
+
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    border-right-color:transparent;
+    position: relative;
+}
+.navbar .logo::before{
+    content: "BossJay";
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-10% -50%);
+    font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+.navbar, .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlist li{
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.navbar a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.navlist a::before{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition:.5s ease-in-out;
+}
+.navlist a:hover::before{
+    width: 100%;
+
+}
+.container-body{
+    background-image:url(img/alo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.palm{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 50px;
+}
+.palm img{
+    width: 30vw;
+    border-radius: 200px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 4px solid  rgb(21, 255, 0);
+    padding: 20px;
+}
+
+.content h3{
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content h1{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    background-color: #24cc40;
+    border-radius: 10px;
+}
+.content p{
+    color: rgb(32, 6, 6);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.content button{
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(25, 194, 61);
+    cursor: pointer;
+    color: azure;
+    border-radius: 2px;
+}
+.content button:hover{
+    background-color: rgb(21, 255, 0);
+    color: white;
+}
+.content .par{
+    font-size: 25px;
+}
+.design{
+    display:none;
+}
+.design span{
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+}
+.design span:nth-child(2){
+    width: 30px;
+}
+
+@media screen and (max-width: 1207px){
+    .palm h1{
+        font-size: 45px;
+    }
+    .palm p{
+        font-size:17px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:1110px){
+    .palm{
+        padding:0 40px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .navbar{
+        position: relative;
+    }
+    .navlist{
+        position: absolute;
+        flex-direction: column;
+        top: 30px;
+        right: -100%;
+        background-color: rgb(29, 179, 29);
+        width: 250px;
+        height: 500px;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+    .navlist-active{
+        right: 0;
+    }
+    .design{
+        display: block;
+        z-index: 5;
+    }
+    .palm img{
+        display: none;
+    }
+    .palm h1{
+        font-size: 50px;
+    }
+    .palm p{
+        font-size: 18px;
+        line-height: 15px;
+
+    }
+    .palm{
+        padding:20px 50px;
+        gap:20px;
+    }
+}
