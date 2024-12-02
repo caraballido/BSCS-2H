@@ -1,0 +1,93 @@
+.ListProduct .item img{
+    width: 80%;
+}
+.ListProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.ListProduct .item{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 20px;
+}
+.ListProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.ListProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.ListProduct .item button{
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.body .container{
+    transition: transform .5s;
+}
+.cartTab{
+    width: 400px;
+    background-color: rgb(61, 112, 72);
+    color: aliceblue;
+    position: fixed;
+    top: 32px;
+    right: -400px;
+    bottom: 32px;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px ;
+    transition: .5s;
+}
+.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+.showCart .navlist{
+    transform: translateX(-100px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: rgb(82, 243, 144);
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .ListCart .item img{
+    width: 100%;
+}
+.cartTab .ListCart .item{
+    display: grid;
+    grid-template-columns:70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.ListCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: azure;
+    color: cadetblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ListCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+.ListCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.ListCart{
+    overflow: auto;
+}
